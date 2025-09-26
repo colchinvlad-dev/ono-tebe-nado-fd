@@ -1,1 +1,291 @@
-/* место для вашего кода */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    gap: 40px;
+}
+
+.navigation ul{
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul .none_markers{
+    list-style: none;
+}
+
+.navigation ul .markers{
+    list-style-type: circle;
+}
+
+.navigation a{
+    font-size: 18px;
+}
+
+.navigation a.action {
+    text-decoration: none;
+}
+
+.logo img {
+    height: 74px;
+    width: auto;
+}
+
+.contacts {
+    margin-left: auto;
+    text-align: start;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.contacts p {
+    margin: 0;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+#cover {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-start{
+    text-transform: uppercase;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+}
+.flex-center{
+    text-transform: uppercase;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-end{
+    text-transform: uppercase;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+.description_button{
+    margin-top: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.des{
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.btn{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#lots {
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+#lots .title {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#lots .title p {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+#lots .cards {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+#lots .card {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#lots .card-title {
+  margin-bottom: 15px;
+}
+
+#lots .card-title p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.3;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#lots .card-text p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  color: white;
+}
+
+.images-1{
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.images-2{
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.images-3{
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#lots .more_detailed {
+  text-align: left;
+}
+
+#lots .more_detailed a {
+  font-size: 20px;
+}
+
+#about_us {
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+#about_us .img {
+  flex-shrink: 0;
+}
+
+#about_us .img img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+#about_us .content-text {
+  flex: 1;
+}
+
+#about_us .title-content {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
+#about_us .text-about {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#about_us .text-about p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    gap: 40px;
+}
+
+.contacts {
+    margin-right: auto;
+    text-align: start;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.navigation-footer ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.navigation-footer ul .none_markers{
+    list-style: none;
+}
+
+.navigation-footer ul .markers{
+    list-style-type: circle;
+}
+
+.navigation-footer a{
+    font-size: 18px;
+}
+
+.navigation-footer a.action {
+    text-decoration: none;
+}
+
+.social_network{
+    display: flex;
+    gap: 20px;
+}
+
+.network{
+    width: 48px;
+}
