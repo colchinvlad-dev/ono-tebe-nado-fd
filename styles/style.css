@@ -98,6 +98,10 @@
   margin-top: 0;
 }
 
+.block {
+  display: block;
+}
+
 .aligned-left,
 .aligned-center,
 .aligned-right {
