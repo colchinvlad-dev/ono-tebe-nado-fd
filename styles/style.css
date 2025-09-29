@@ -2,15 +2,13 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding-top: 92px;
-  padding-left: 24px;
-  padding-bottom: 92px;
-  padding-right: 24px;
+  padding:92px 24px;
 }
 
 .header_menu {
   display: flex;
-  justify-self: start;
+  justify-self: center;
+
 }
 
 .header_links-list {
@@ -23,33 +21,22 @@
 .header_links-list-item {
   font-size: 18px;
   font-weight: 400;
-  text-underline-offset: 4px;
+  text-underline-offset: 4px; 
   text-decoration: underline;
 }
 
-.header_links-list-item_none {
-  list-style-type: none;
+.links-list-item_none {
+  list-style-type: none; 
   text-decoration: none;
 }
 
-.header_link {
-  text-underline-offset: 4px;
-  text-decoration: underline;
-}
-
-.header_link_none {
+.link_none {
   text-decoration: none;
-}
-
-.header_logo {
-  width: 148px;
-  height: 105px;
-  justify-self: center;
 }
 
 .header_logo-image {
-  width: 100%;
-  height: auto;
+  width: 148px;
+  height: 105px;
 }
 
 .address {
@@ -57,7 +44,6 @@
   font-size: 18px;
   line-height: 24.3px;
   letter-spacing: 0.18px;
-  list-style-type: none;
   font-style: normal;
   justify-self: end;
 }
@@ -127,20 +113,24 @@
   text-align: center;
   letter-spacing: 30px;
   line-height: 115px;
-  padding-left: 60px; /* Сдвиг вправо как в макете */
+  /* Убираем padding-left и добавляем margin для смещения влево */
+  padding-right: 0;
+  margin-right: -70px; /* Сдвигаем всю строку левее */
+  margin-top: 10px; /* Сдвигаем строку вниз */
+  transform: translateX(-5px); /* Дополнительный сдвиг влево */
 }
 
 .aligned-right {
   text-align: right;
   letter-spacing: 30px;
   line-height: 115px;
+  margin-right: -0.3em;
 }
 
 /* Межбуквенные интервалы как в макете */
 .spaced-letters {
   letter-spacing: 60px;
 }
-
 .spaced-letter {
   letter-spacing: 60px;
 }
@@ -149,10 +139,38 @@
   letter-spacing: 0; /* Для последней буквы "о" */
 }
 
+.last-letter {
+  margin-left: -30px; /* Дополнительный отступ для последней буквы */
+}
+
+.last-letter_second{
+  position: relative;
+  left: -30px; /* Сдвигаем букву "е" левее */
+  display: inline-block;
+}
+
+.middle-letter,
+.middle-spaced {
+  margin-left: -40px; /* Одинаковое смещение для "А" и "Д" */
+  display: inline-block;
+}
+
+.spaced-letter_rigth {
+  letter-spacing: 60px;
+  margin-left: 40px; /* Сдвигаем буквы "Н" и "Д" левее */
+}
+
+.spaced-letter:last-child {
+  /* Буква "Д" - сдвигаем левее */
+  letter-spacing: 60px;
+  margin-left: -100px;
+  display: inline-block;
+}
+
 .description_button {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-top: auto;
   gap: 78px;
 }
@@ -173,7 +191,7 @@
   text-transform: uppercase;
   color: #FFF;
   width: 257px;
-  height: 52px;
+  height: 51px;
   border: 1px solid #fff;
   background-color: transparent;
   cursor: pointer;
@@ -273,10 +291,11 @@
 }
 
 .about_container {
-  display: flex;
+ display: flex;
   gap: 25px;
   padding: 34px 24px 0px;
   align-items: flex-start;
+  transform: translateY(-25px); /* Плавно поднимаем весь блок */
 }
 
 .about_logo {
@@ -347,7 +366,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 180px 50px 88px;
+  padding: 160px 50px 88px;
   gap: 140px;
 }
 
@@ -355,6 +374,13 @@
   font-style: normal;
   padding-left: 0px; 
   flex: 0 0 auto; /* auto - занимает место по содержимому */
+}
+
+.footer_address a,
+.footer_address p {
+  display: block;
+  line-height: 24.3px;
+  letter-spacing: 0.18px;
 }
 
 .footer_menu {
@@ -376,10 +402,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
-}
-
-.footer_none {
-  text-decoration: none;
 }
 
 .images_footer {
