@@ -117,11 +117,11 @@
   text-align: center;
   letter-spacing: 30px;
   line-height: 115px;
-  /* Убираем padding-left и добавляем margin для смещения влево */
+  /* Убираем transform и используем только margin */
   padding-right: 0;
-  margin-right: -70px; /* Сдвигаем всю строку левее */
-  margin-top: 10px; /* Сдвигаем строку вниз */
-  transform: translateX(-5px); /* Дополнительный сдвиг влево */
+  margin-right: -70px;
+  margin-top: 10px;
+  margin-left: -5px; /* Заменяем transform: translateX(-5px) */
 }
 
 .aligned-right {
@@ -155,8 +155,20 @@
 
 .middle-letter,
 .middle-spaced {
-  margin-left: -40px; /* Одинаковое смещение для "А" и "Д" */
   display: inline-block;
+  position: relative;
+}
+
+.middle-letter {
+  left: 10px; /* Регулируйте для буквы А */
+}
+
+.middle-spaced {
+  left: -25px; /* Регулируйте для буквы Д */
+}
+
+.spaced-letter_rigth:nth-child(1) {
+  margin-right: -40px; /* Компенсируем Н */
 }
 
 .spaced-letter_rigth {
@@ -295,11 +307,11 @@
 }
 
 .about_container {
- display: flex;
+  display: flex;
   gap: 25px;
   padding: 34px 24px 0px;
   align-items: flex-start;
-  transform: translateY(-25px); /* Плавно поднимаем весь блок */
+  margin-top: -25px; /* Заменяем transform: translateY(-25px) */
 }
 
 .about_logo {
@@ -370,7 +382,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 160px 50px 88px;
+  padding: 180px 50px 88px;
   gap: 140px;
 }
 
