@@ -160,11 +160,11 @@
 }
 
 .middle-letter {
-  left: 10px; /* Регулируйте для буквы А */
+  left: 10px; /* Регулируем  буквы А */
 }
 
 .middle-spaced {
-  left: -25px; /* Регулируйте для буквы Д */
+  left: -25px; /* Регулируем  буквы Д */
 }
 
 .spaced-letter_rigth:nth-child(1) {
